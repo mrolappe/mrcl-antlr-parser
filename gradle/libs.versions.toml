@@ -1,0 +1,21 @@
+[versions]
+# libraries
+antlr4 = "4.13.1"
+junit5 = "5.10.3"
+kotest = "5.9.1"
+
+# plugins
+kotlin = "2.0.0"
+
+[libraries]
+antlr4 = { group = "org.antlr", name = "antlr4", version.ref = "antlr4" }
+kotestRunner = { group = "io.kotest", name = "kotest-runner-junit5", version.ref = "kotest" }
+kotestAssertionsCore = { group = "io.kotest", name = "kotest-assertions-core", version.ref = "kotest" }
+junitJupiterApi = { group = "org.junit.jupiter", name = "junit-jupiter-api", version.ref = "junit5" }
+junitJupiterEngine = { group = "org.junit.jupiter", name = "junit-jupiter-engine", version.ref = "junit5" }
+
+[plugins]
+kotlin = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+
+[bundles]
+junitJupiter = ["junitJupiterApi", "junitJupiterEngine"]

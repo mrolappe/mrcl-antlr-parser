@@ -8,8 +8,8 @@ group = "de.rholambdapi.mrcl"
 version = "0.1-SNAPSHOT"
 
 java {
-    sourceCompatibility = JavaVersion.VERSION_11
-    targetCompatibility = JavaVersion.VERSION_11
+    sourceCompatibility = JavaVersion.VERSION_21
+    targetCompatibility = JavaVersion.VERSION_21
     withSourcesJar()
 }
 
@@ -62,5 +62,5 @@ tasks.named("sourcesJar") {
 }
 
 kotlin {
-    jvmToolchain(11)
+    jvmToolchain(21)
 }
